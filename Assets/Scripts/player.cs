@@ -8,6 +8,8 @@ public class player : MonoBehaviour
     private Vector3 moveDelta;
     private RaycastHit2D hit;
 
+    public bool gameEnd = false;
+
     private void Start()
     {
         boxCollider = GetComponent<BoxCollider2D>();

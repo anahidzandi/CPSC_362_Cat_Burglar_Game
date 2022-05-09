@@ -7,7 +7,9 @@ public class PlayerInventory : MonoBehaviour
     public bool hasKey = false;
 
     public int fish = 0;
-
+    public GameObject Fish1;
+    public GameObject Fish2;
+    public GameObject Fish3;
     public void restartInventory()
     {
         hasKey = false;
@@ -34,6 +36,18 @@ public class PlayerInventory : MonoBehaviour
             Destroy(collider.gameObject);
             fish += 1;
             print(fish);
+            if (fish == 1)
+            {
+                Fish1.SetActive(true);
+            }
+            if (fish == 2)
+            {
+                Fish2.SetActive(true);
+            }
+            if (fish == 3)
+            {
+                Fish3.SetActive(true);
+            }
         }
 
         if (collider.gameObject.CompareTag("door"))

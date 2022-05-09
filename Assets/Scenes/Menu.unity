@@ -362,6 +362,7 @@ GameObject:
   - component: {fileID: 460169361}
   - component: {fileID: 460169360}
   - component: {fileID: 460169359}
+  - component: {fileID: 460169363}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -451,6 +452,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &460169363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 460169358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a18d862bfb0cb30438a86aa4e40a0618, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Level2Button: {fileID: 995323435}
+  Level3Button: {fileID: 1806050263}
 --- !u!1 &574033943
 GameObject:
   m_ObjectHideFlags: 0
@@ -1227,7 +1242,7 @@ GameObject:
   - component: {fileID: 995323436}
   - component: {fileID: 995323435}
   m_Layer: 5
-  m_Name: Level2
+  m_Name: Level2Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2066,7 +2081,7 @@ GameObject:
   - component: {fileID: 1806050264}
   - component: {fileID: 1806050263}
   m_Layer: 5
-  m_Name: Level3
+  m_Name: Level3Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

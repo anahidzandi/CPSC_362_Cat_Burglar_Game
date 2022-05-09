@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Key
   - fish
+  - Capsule
   layers:
   - Default
   - TransparentFX

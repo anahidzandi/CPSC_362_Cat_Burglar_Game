@@ -35,5 +35,14 @@ public class PlayerInventory : MonoBehaviour
             fish += 1;
             print(fish);
         }
+
+        if (collider.gameObject.CompareTag("door"))
+        {
+            if (hasKey == true)
+            {
+                Debug.Log("PlayerInv");
+                FindObjectOfType<GameManager>().levelComplete();
+            }
+        }
     }
 }

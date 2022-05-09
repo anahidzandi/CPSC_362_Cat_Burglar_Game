@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class door : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void OnTriggerEnter2D(Collider2D collider)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Debug.Log("Door");
+        if (FindObjectOfType<PlayerInventory>().hasKey == true)
+        {
+            FindObjectOfType<GameManager>().levelComplete();
+        }
     }
 }

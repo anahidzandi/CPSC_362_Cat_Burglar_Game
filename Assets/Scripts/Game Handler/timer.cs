@@ -41,6 +41,7 @@ public class timer : MonoBehaviour
             {
                 timeRemaining = 0;
                 timerGoing = false;
+                FindObjectOfType<GameManager>().gameOver();
             }
         }
  
